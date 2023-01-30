@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================
+google font================= */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+
+/* ============================
+basic css=================== */
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Lato', sans-serif;
+}
+
+a,
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.container::before,
+.container::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.col-25{
+    width: 25%;
+    float: left;
+    padding: 0 15px;
+}
+
+.col-33{
+    width: 33.33%;
+    float: left;
+    padding: 0 15px;
+}
+
+.col-50{
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+}
+
+
+/* ============================
+custom css================== */
+
+
+/* ============================
+top-bar css================== */
+.top-bar{
+    background-color: #f5f7fa;
+}
+.top-bar-content{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+.top-bar-content ul{
+    list-style: none;
+    color: #506a85;
+}
+
+ .top-bar-left ul {
+    display: flex;
+   justify-content: space-between;
+    text-align: center;
+}
+
+.top-bar-left ul li{
+    margin-right: 30px;
+}
+
+.top-bar-left ul li i{
+    margin-right: 10px;
+}
+
+.top-bar-right ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-bar-right ul li i{
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.top-bar-right ul li i:hover{
+    color: #00bc9c;
+}
+
+/* ==========================
+header css====================== */
+.head-content{
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-content .logo{
+    width: 175px;
+
+}
+
+.head-content nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-content li{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #506a85;
+    margin-right: 40px;
+    transition: 0.3s;
+}
+
+.head-content li:hover{
+    color: #00bc9c;
+}
+
+.head-content .search a{
+   margin-left: -60px;
+   color: #506a85;
+}
+
+.head-content .search a:hover{
+    color: #00bc9c;
+}
+
+
+/* ============================
+home css==================== */
+.home{
+    clear: both;
+    height: 870px;
+    background-image: url(../img/mainbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-content h1{
+    color: #fff;
+    font-size: 78px;
+    font-weight: 700px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom:35px ;
+}
+
+.home-content p{
+    color: #a3b1bf;
+    margin-bottom: 70px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.home-btn{
+    width: 290px;
+    height: 65px;
+    background: #00bc9c;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.home-btn:hover{
+    background: #0c9f86;
+}
+
+/* ==============================
+responsive css================ */
+
+.responsive{
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center ;
+}
+
+.responsive-title h2{
+    font-size: 44px;
+    font-weight: 700px;
+    color: #506a85;
+    margin-bottom: 45px;
+}
+
+.responsive-title p{
+    font-size: 22px;
+    font-weight: 400;
+    color: #73879c;
+    line-height: 40px;
+    margin-bottom: 80px;
+}
+
+.responsive .col-33{
+    display: flex;
+    text-align: left;
+}
+
+
+.responsive img{
+    padding: 0 30px;
+}
+
+.responsive-content h4{
+    font-size: 26px ;
+    font-weight:700 ;
+    color: #506a85;
+    margin-bottom: 30px ;
+}
+
+.responsive-content p{
+    font-size: 16px ;
+    font-weight:400 ;
+    line-height: 25px;
+    color: #73879c;
+}
+
+
+/* ==============================
+check-work css================= */
+    
+.check-work{
+    height: 1200px;
+    background: #f2f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.check-work-title h2{
+    font-size: 44px;
+    font-weight:700 ;
+    color: #506a85;
+    margin-bottom: 45px ;
+}
+
+.check-work-title p{
+    font-size: 22px;
+    font-weight:400 ;
+    color: #73879c;
+    margin-bottom: 80px;
+}
+
+.img{
+    overflow: hidden;
+}
+
+.check-work .work-content{
+    height: 125px;
+    border: 1px solid #e6e9ed;
+    box-shadow: 0 2px 5px #e6e9ed;
+    border-top: none;
+    margin-top: -5px;
+    margin-bottom: 80px;
+}
+
+.work-content h4{
+    color: #506a85;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+.work-content p{
+    color: #7e90a3;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dotdot{
+    clear: both;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #506a85;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.active{
+    background-color: #00bc9c;
+}
+
+
+/* ==========================
+bottom css=============== */
+.bottom{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bottom h2{
+    color: #506a85;
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+.bottom p{
+    color:#73879c ;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom:40px ;
+}
+
+.bottom .bottom-btn{
+    height: 50px;
+    width: 150px;
+    background: #00bc9c;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    text-transform:uppercase ;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.bottom .bottom-btn:hover{
+    background: #0c9f86;
+}
+
+/* ==============================
+foot css======================= */
+.foot{
+    height: 350px;
+    background: #2f4052;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot h5{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.foot-logo{
+    margin-bottom: 20px;
+}
+
+.foot p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #a3b1bf;
+    margin-bottom: 25px;
+}
+
+.foot h6{
+    font-size: 15px;
+    font-weight: 700;
+    color: #a3b1bf;
+}
+
+.foot .col-50{
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+.foot ul{
+    list-style: none;
+}
+
+.contact{
+    display: flex;
+    font-size: 14px;
+}
+.foot li{
+    color: #a3b1bf;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.foot i:hover{
+    color: #00bc9c;
+}
+
+.foot li span{
+    color: #a3b1bf;
+}
+
+.foot input{
+    width: 100%;
+    height: 40px;
+    background: #4e5c6c;
+    color: #76838f;
+    border: none;
+    border-radius: 5px;
+    padding: 0 15px;
+    position: relative;
+
+}
+
+.foot-btn{
+    position: absolute;
+    width: 90px;
+    height: 33px;
+    font-size: 13px;
+    font-weight: 700;
+    background: #00bc9c;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    margin-top: 3px;
+    margin-left: -94px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.foot-btn:hover{
+    background-color: #0c9f86;
+}
+
+/* =============================
+foot bottom css=============== */
+footer{
+    height: 80px;
+    background: #283645;
+}
+
+.foot-content{
+    font-size: 14px;
+    color:#a3b1bf ;
+}
+.foot-left{
+    line-height: 80px;
+    float: left;
+}
+
+.foot-right{
+    line-height: 80px;
+    float: right;
+}
+.foot-right .foot-dot{
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    background-color: #a3b1bf;
+    margin-left: 15px;
+}
+
+
+ .foot-right ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.foot-right li i{
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    border-radius: 2px;
+    text-align: center;
+    background: #506a85;
+    margin-left: 200px;
+    transition: 0.3s;
+}
+.foot-right li i:hover{
+    color: #00bc9c;
+}
